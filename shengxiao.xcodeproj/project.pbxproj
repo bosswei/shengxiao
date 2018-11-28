@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60C983021AE974D00D2E0F6 /* LoveFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C982E21AE974D00D2E0F6 /* LoveFinder.swift */; };
+		B60C983121AE974D00D2E0F6 /* LoveFinder.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60C982F21AE974D00D2E0F6 /* LoveFinder.xib */; };
 		B6611C2921AE835E007E0BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6611C2821AE835E007E0BFA /* AppDelegate.swift */; };
 		B6611C2B21AE835E007E0BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6611C2A21AE835E007E0BFA /* ViewController.swift */; };
 		B6611C2E21AE835E007E0BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6611C2C21AE835E007E0BFA /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60C982E21AE974D00D2E0F6 /* LoveFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveFinder.swift; sourceTree = "<group>"; };
+		B60C982F21AE974D00D2E0F6 /* LoveFinder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoveFinder.xib; sourceTree = "<group>"; };
 		B6611C2521AE835E007E0BFA /* shengxiao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shengxiao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6611C2821AE835E007E0BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6611C2A21AE835E007E0BFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		B6611C2F21AE835F007E0BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6611C3221AE835F007E0BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6611C3421AE835F007E0BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6611C3A21AE8FF6007E0BFA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +61,13 @@
 			children = (
 				B6611C2821AE835E007E0BFA /* AppDelegate.swift */,
 				B6611C2A21AE835E007E0BFA /* ViewController.swift */,
+				B60C982E21AE974D00D2E0F6 /* LoveFinder.swift */,
+				B60C982F21AE974D00D2E0F6 /* LoveFinder.xib */,
 				B6611C2C21AE835E007E0BFA /* Main.storyboard */,
 				B6611C2F21AE835F007E0BFA /* Assets.xcassets */,
 				B6611C3121AE835F007E0BFA /* LaunchScreen.storyboard */,
 				B6611C3421AE835F007E0BFA /* Info.plist */,
+				B6611C3A21AE8FF6007E0BFA /* MyPlayground.playground */,
 			);
 			path = shengxiao;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6611C3321AE835F007E0BFA /* LaunchScreen.storyboard in Resources */,
+				B60C983121AE974D00D2E0F6 /* LoveFinder.xib in Resources */,
 				B6611C3021AE835F007E0BFA /* Assets.xcassets in Resources */,
 				B6611C2E21AE835E007E0BFA /* Main.storyboard in Resources */,
 			);
@@ -135,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60C983021AE974D00D2E0F6 /* LoveFinder.swift in Sources */,
 				B6611C2B21AE835E007E0BFA /* ViewController.swift in Sources */,
 				B6611C2921AE835E007E0BFA /* AppDelegate.swift in Sources */,
 			);
@@ -283,15 +293,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E6VJ9ZKK6R;
 				INFOPLIST_FILE = shengxiao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.shengxiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dingAll;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +313,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E6VJ9ZKK6R;
 				INFOPLIST_FILE = shengxiao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.shengxiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dingAll;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,13 +9,25 @@
 import UIKit
 
 class LoveFinder: UIViewController {
-
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var gender: UISegmentedControl!
+    @IBOutlet weak var birthday: UIDatePicker!
+    @IBOutlet weak var heightNumber: UISlider!
+    @IBOutlet weak var height: UILabel!
+    @IBOutlet weak var hasProperty: UISwitch!
+    
+    @IBOutlet weak var result: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnconfirm(_ sender: Any) {
+    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view .resignFirstResponder()
+    }
     @IBAction func btnBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

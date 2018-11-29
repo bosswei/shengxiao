@@ -119,11 +119,14 @@
                         <!--2018-12-31 11:00:00 +0000-->
                     </date>
                 </datePicker>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-Td-YEN">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="170" minValue="140" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-Td-YEN">
                     <rect key="frame" x="78" y="380.5" width="184" height="31"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="180" id="lfT-jp-BA2"/>
                     </constraints>
+                    <connections>
+                        <action selector="heightChanged:" destination="-1" eventType="valueChanged" id="ECY-ub-zqT"/>
+                    </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6P-eG-4hA">
                     <rect key="frame" x="0.0" y="420" width="70" height="21"/>
@@ -158,13 +161,12 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="170cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGq-I2-53c">
-                    <rect key="frame" x="275" y="385" width="70" height="21"/>
+                    <rect key="frame" x="275" y="385" width="90" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0S6-7J-Jsy"/>
-                        <constraint firstAttribute="width" constant="70" id="9Lk-aq-A3U"/>
                         <constraint firstAttribute="height" constant="21" id="Jxe-2H-aze"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -195,6 +197,7 @@
                 <constraint firstItem="CsB-G3-72o" firstAttribute="centerY" secondItem="Tig-Q4-06I" secondAttribute="centerY" id="aHl-tm-FRn"/>
                 <constraint firstItem="Op3-wP-8fF" firstAttribute="top" secondItem="Tig-Q4-06I" secondAttribute="bottom" constant="14" id="ch2-ll-CRu"/>
                 <constraint firstItem="iby-d4-XwM" firstAttribute="leading" secondItem="Op3-wP-8fF" secondAttribute="trailing" constant="15" id="f0v-JP-WKE"/>
+                <constraint firstAttribute="trailing" secondItem="HGq-I2-53c" secondAttribute="trailing" constant="10" id="fHJ-bw-Si0"/>
                 <constraint firstAttribute="trailing" secondItem="iby-d4-XwM" secondAttribute="trailing" constant="15" id="oa9-h2-N6v"/>
                 <constraint firstItem="ThY-EN-mUw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="q18-HX-ALC"/>
                 <constraint firstItem="d0O-sW-goj" firstAttribute="leading" secondItem="PR7-ub-BdS" secondAttribute="trailing" constant="15" id="q2z-1F-qRl"/>

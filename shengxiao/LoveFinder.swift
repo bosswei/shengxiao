@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoveFinder: UIViewController {
+class LoveFinder: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var gender: UISegmentedControl!
     @IBOutlet weak var birthday: UIDatePicker!
@@ -20,10 +20,18 @@ class LoveFinder: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        name.delegate = self
         // Do any additional setup after loading the view.
     }
 
     @IBAction func btnconfirm(_ sender: Any) {
+        let genderText = gender.selectedSegmentIndex == 0 ? "高富帅" :"白富美"
+        let  chooseDate = birthday.date
+        let  dateFormater = DateFormatter.init()
+        dateFormater.dateFormat = "YYYY-MM-dd"
+        print(dateFormater.string(from: chooseDate))
+        let hasPropertyText = hasProperty.isOn ? "有房" : "没房"
+        result.text = "\(name.text ?? ""),我是\(genderText),出生在\(dateFormater.string(from: chooseDate))，我\(hasPropertyText)"
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view .resignFirstResponder()
@@ -32,6 +40,20 @@ class LoveFinder: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func heightChanged(_ sender: Any) {
+        let slide = sender as! UISlider
+        let i = Int(slide.value)
+        slide.value = Float(i)
+        
+        height.text = "\(i)厘米"// slide.value
+        
+        
+        //height.text = sender.value
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     /*
     // MARK: - Navigation
 

@@ -20,10 +20,14 @@ class LoveFinder: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("fsdafasdfsd")
         name.delegate = self
         // Do any additional setup after loading the view.
     }
 
+    func testfile(){
+        print("delegate")
+    }
     @IBAction func btnconfirm(_ sender: Any) {
         let genderText = gender.selectedSegmentIndex == 0 ? "高富帅" :"白富美"
         let  chooseDate = birthday.date

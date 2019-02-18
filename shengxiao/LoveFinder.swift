@@ -22,14 +22,10 @@ class LoveFinder: UIViewController,UITextFieldDelegate {
 
         print("fsdafasdfsd")
         name.delegate = self
+        print("mergerer")
         // Do any additional setup after loading the view.
     }
 
-    func testfile(){
-        print("delegate")
-        print("my commite")
-        print("sssssss")
-    }
     @IBAction func btnconfirm(_ sender: Any) {
         let genderText = gender.selectedSegmentIndex == 0 ? "高富帅" :"白富美"
         let  chooseDate = birthday.date
@@ -38,6 +34,9 @@ class LoveFinder: UIViewController,UITextFieldDelegate {
         print(dateFormater.string(from: chooseDate))
         let hasPropertyText = hasProperty.isOn ? "有房" : "没房"
         result.text = "\(name.text ?? ""),我是\(genderText),出生在\(dateFormater.string(from: chooseDate))，我\(hasPropertyText)"
+    }
+    func testupdateMaster(){
+        print("fdsafads")
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view .resignFirstResponder()

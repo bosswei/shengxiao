@@ -27,6 +27,8 @@ class LoveFinder: UIViewController,UITextFieldDelegate {
 
     func testfile(){
         print("delegate")
+        print("my commite")
+        print("sssssss")
     }
     @IBAction func btnconfirm(_ sender: Any) {
         let genderText = gender.selectedSegmentIndex == 0 ? "高富帅" :"白富美"

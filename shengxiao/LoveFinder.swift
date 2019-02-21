@@ -19,7 +19,9 @@ class LoveFinder: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var result: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print("fsdafasdfsd")
+        print("fsdafasdfsd")
+        print("fsdafasdfsd")
         print("fsdafasdfsd")
         name.delegate = self
         // Do any additional setup after loading the view.
